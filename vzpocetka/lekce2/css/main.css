@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: relative;
+    min-height: 100vh; /* Ensures the body fills the viewport height */
+}
+.def_nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.def_nav li {
+    margin-right: 6px;
+}
+.def_nav a {
+    text-decoration: none;
+    color: black;
+    font: 1em Baskervville;
+}
+
+.nav_div {
+    background-color: #ff0000;
+    padding: 10px;
+}
+
+.default {
+    font: 1em Cinzel;
+    background-color: #000;
+    color: #ffffff;
+
+    font-family: 1em Cinzel;
+}
+
+.yellow {
+    color: #fcff30;
+}
+
+.card {
+    background-color: #fcff30;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    color: #000;
+}
+
+.c_card {
+    background-color: #fcff30;
+    padding: 10px;
+    margin: 10px auto; /* Center horizontally */
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    text-decoration-color: red;
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    color: #000;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 10px;
+
+    animation: shake 0.1s infinite;
+}
+
+.red_underline {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
