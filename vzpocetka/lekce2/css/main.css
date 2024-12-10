@@ -47,6 +47,16 @@ body {
     color: #000;
 }
 
+.gradinet_to_invisible {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-align: center;
+    font-size: 15px;
+  }
+
+
 .c_card {
     background-color: #fcff30;
     padding: 10px;
