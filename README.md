@@ -5,6 +5,5 @@ Some websites are quite funny.
 
 For example:
 - [this](/vzpocetka/lekce4/lostdawg.html)
-- [this](/vzpocetka/lekce2/lll/index.html)
-or
+- [this](/vzpocetka/lekce2/lll/index.html) or
 - [this](/vzpocetka/lekce2/tst.html)
