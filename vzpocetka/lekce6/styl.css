@@ -1,0 +1,7 @@
+/* CSS Document */
+
+  section:after {
+  content: "";
+  display: table;
+  clear: both;}
+  .aktivni{color:rgb(0,255,255)} 

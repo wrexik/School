@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset=utf-8>
+  <title>Tabulka</title>
+  <style>
+    .bunka{
+        font-size: 16pt;
+        border: red solid 3px; /* Mrizska */
+        padding: 10px;
+        text-align: center;
+        min-width: 50px;
+      }
+    .tabulka{
+        border-collapse: collapse; /* Spoji border aby vznikla mrizka */
+        background:url(./obrazky/pozadi.jpg);
+        width: 500px;
+      }
+
+
+      .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+
+        padding-bottom: 5px;
+      }
+
+      .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #0059ff;
+        text-align: center;
+      }
+
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <a>Test zadani 2 - </a> <a href="https://catgirl.singles">vypracoval</a>
+    </div>
+    <br>
+    
+
+    <table class="tabulka">
+      <tr class="bunka">
+        <th rowspan="4" class="bunka">A</th>
+      </tr>
+
+      <tr class="bunka">
+        <th class="bunka">B</th>
+        <th class="bunka">C</th>
+        <th class="bunka">D</th>
+        <th class="bunka">E</th>
+
+      </tr>
+
+      <th colspan="3" class="bunka">F</th>
+
+      <th class="bunka">G</th>
+
+      <tr class="bunka">
+        <th class="bunka">H</th>
+        <th class="bunka">I</th>
+        <th class="bunka">J</th>
+        <th class="bunka">K</th>
+      </tr>
+
+      <tr class="bunka">
+        <th class="bunka">L</th>
+        <th class="bunka">M</th>
+
+        <th rowspan="2"; colspan="2" class="bunka"><img src="./obrazky/kun.jpg"; style="width: 100px;"></th>
+
+        <th class="bunka">O</th>
+      </tr>
+
+      <tr class="bunka">
+        <th class="bunka">P</th>
+        <th class="bunka">Q</th>
+        <th class="bunka">R</th>
+      </tr>
+    </table>
+
+    <footer class="footer">1k4k - 2025 ©</footer>
+
+  </body>
+</html>
