@@ -1,7 +1,45 @@
-/* CSS Document */
-
-  section:after {
+section:after{
   content: "";
   display: table;
-  clear: both;}
-  .aktivni{color:rgb(0,255,255)} 
+  clear: both;
+}
+.aktivni{
+  color:rgb(0,255,255)
+}
+header, footer{
+  background-color: rgb(16%, 24%, 51%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+nav{
+  width: 20%;
+  float: left;
+}
+article{
+  width: 80%;
+  background-color: rgb(100%, 100%, 80%);
+  float: left;
+}
+img{
+  width: 25%;
+  float: right;
+}
+
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  background-color: rgb(16%, 24%, 51%);
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 1px 3px rgba(0, 0, 0, 0, 0.12), 1px 2px rgba(0, 0, 0, 0, 0.24);
+}
+nav li:hover{
+  background-color: goldenrod;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
