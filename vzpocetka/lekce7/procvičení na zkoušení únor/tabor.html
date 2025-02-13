@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset=utf-8>
+  <title>Mesto Tabor</title>
+  </head>
+
+  <style>
+    body {
+      background-color: rgb(20, 0, 0);
+      background-image: url(img/bg3.gif);
+      background-repeat: repeat-x;
+      background-position: center bottom;
+    }
+
+    h1 {
+      color: rgb(255, 238, 0);
+      font-family: Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    hr {
+      width: 500px;
+      height: 1px;
+      background-color: yellow;
+      border: none;
+    }
+
+    .vlevo {
+      float: left;
+    }
+
+    .vpravo {
+      float: right;
+    }
+
+    .zalozen {
+      color: rgb(255, 255, 255);
+      font-style: italic;
+      size: 18px;
+
+      margin-top: 10px;
+    }
+
+    .obrazky-middle {
+      display: flex;
+      margin: 0 auto;
+      clear: both;
+      justify-content: center;
+
+      img {
+        margin: 4px;
+      }
+    }
+
+    p {
+      color: blue;
+      font-family: Garamond;
+      font-size: 16pt;
+      font-weight: bold;
+      text-indent: 2cm;
+      text-align: justify;
+    }
+
+    table {
+      color: white;
+      font-family: cursive;
+      size: 1px;
+    }
+  </style>
+
+
+  <body>
+
+    <h1> Mesto tabor </h1>
+    <hr>
+    <div>
+      <a href="http://www.taborcz.eu/">
+        <img src="./kalich.GIF" height="160" width="160" class="vlevo">
+      </a>
+
+      <a class="vpravo zalozen">Zalozeno 1420</a>
+    </div>
+
+
+    <div class="obrazky-middle">
+      <img src="./trh.jpg" height="160" width="160">
+      <img src="./rytir.jpg" height="160" width="160">
+    </div>
+
+    <br>
+    
+    <table>
+      <tr>
+        <th>Company</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+
+  </body>
+</html>
