@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quick JS</title>
+    </head>
+
+    <body> 
+        <h1>Quick JS Start</h1>
+
+        <a>
+            This lesson will be focused on JS.
+            Yeah, we are going to learn some JS basics 😒.
+        </a>
+
+        <br>
+        <div class="buttons">
+            <ul>
+                <li> <button class="button1">Two numbers connect</button> - just numbers no?</li>
+                <li> <button class="button2">Write text as html object</button> -  try to inject me with html or js code :)</li>
+                <li> <button class="button3">Text to append on page or else...?</button> - xss</li>
+            </ul>
+        </div>
+
+        <script>
+            const button1 = document.querySelector('.button1');
+            const button2 = document.querySelector('.button2');
+            const button3 = document.querySelector('.button3');
+
+            button1.addEventListener('click', () => {
+                // Prompt user to enter the first number
+                cislo1 = prompt('Enter first number');
+
+                // Here, we directly use parseInt without validation
+                //cislo1 = parseInt(cislo1);
+
+                // Prompt user to enter the second number
+                cislo2 = prompt('Enter second number');
+
+                // Directly parse the second number as well
+                //cislo2 = parseInt(cislo2);
+
+                // If inputs are not valid numbers, the result will be NaN (Not a Number)
+                // No validation for unsafe input or script injection
+
+                const out = cislo1 + cislo2;
+
+                if (out == "alert()") {
+                    alert("Congrats! This is how you can inject a script. Although, this wont run, it is a good start.");
+                }
+                else {
+                    alert(cislo1 + cislo2);  // This is where things can go wrong with user input
+                }
+            });
+
+            button3.addEventListener('click', () => {
+                const injectedScript = prompt("Write your post here!");
+
+                const scriptElement = document.createElement('div');
+                scriptElement.innerHTML = injectedScript;
+                document.body.appendChild(scriptElement);
+            });
+        </script>
+    </body>
+</html>
