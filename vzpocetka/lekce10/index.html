@@ -21,6 +21,8 @@
             </ul>
         </div>
 
+        <li>Note: This is just an example of how to inject a script.</li>
+
         <script>
             const button1 = document.querySelector('.button1');
             const button2 = document.querySelector('.button2');
@@ -49,6 +51,24 @@
                 }
                 else {
                     alert(cislo1 + cislo2);  // This is where things can go wrong with user input
+                }
+            });
+
+            button2.addEventListener('click', () => {
+                const userInput = prompt("Write your post here!");
+                
+                // Check if the input contains HTML-like elements
+                if (userInput.includes('<')) {
+                    // Create a container for HTML and append it
+                    const container = document.createElement('div');
+                    container.innerHTML = userInput;
+                    document.body.appendChild(container);
+                }
+                else {
+                    // Otherwise, treat as JavaScript code
+                    const scriptElement = document.createElement('script');
+                    scriptElement.textContent = userInput;
+                    document.body.appendChild(scriptElement);
                 }
             });
 
